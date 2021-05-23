@@ -8,6 +8,9 @@ We will setup a swarm of three nodes (one manager and two workers).
 - Install Docker Machine by following the instructions here: [Install Docker Machine](https://docs.docker.com/machine/install-machine/)
 - Install VirtualBox (for running a multi-node swarm locally) from here: [VirtualBox binaries](https://www.virtualbox.org/wiki/Downloads)
 
+## Shell Preferences
+Git Bash is used for this guide, but PowerShell or other shells can also be used.
+
 ## From Host
 ```
 for index in node{0..2}; do docker-machine create --driver virtualbox $index; done
@@ -133,5 +136,4 @@ docker service rm myservice
 - [docker swarm](https://docs.docker.com/engine/reference/commandline/swarm/)
 - [docker service](https://docs.docker.com/engine/reference/commandline/service/)
 - [docker node](https://docs.docker.com/engine/reference/commandline/node/)
-
 - [docker-machine](https://docs.docker.com/machine/reference/)
